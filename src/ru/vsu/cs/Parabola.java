@@ -5,9 +5,9 @@ public class Parabola {
      * y = a * (x - x0) + y0
      * x = a * (y - y0) + x0
      */
-    public double x0;
-    public double y0;
-    public double a;
+    private final double x0;
+    private final double y0;
+    private final double a;
 
     public Parabola(double x0, double y0, double a) {
         this.x0 = x0;

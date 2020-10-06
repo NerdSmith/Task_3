@@ -2,9 +2,9 @@ package ru.vsu.cs;
 
 public class Line {
     // y = a * (x - x0) + y0
-    public double x0;
-    public double y0;
-    public double a;
+    private final double x0;
+    private final double y0;
+    private final double a;
 
     public Line(double x0, double y0, double a) {
         this.x0 = x0;

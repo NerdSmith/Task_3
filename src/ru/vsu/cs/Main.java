@@ -27,7 +27,7 @@ public class Main {
         System.out.printf("(%.2f, %.2f) -> %s%n", x, y, getColor(x, y));
     }
 
-    public static double readPoint(String name) {
+    private static double readPoint(String name) {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("Enter the %s point ", name);
         return scanner.nextDouble();
