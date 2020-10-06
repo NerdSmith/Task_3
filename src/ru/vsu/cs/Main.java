@@ -24,10 +24,10 @@ public class Main {
     }
 
     private static void printColorForPoint(double x, double y) {
-        System.out.println("(" + x +", " + y + ") -> " + getColor(x, y));
+        System.out.printf("(%.2f, %.2f) -> %s%n", x, y, getColor(x, y));
     }
 
-    public static double enterPoint(String name){
+    public static double readPoint(String name) {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("Enter the %s point ", name);
         return scanner.nextDouble();
@@ -44,8 +44,8 @@ public class Main {
         printColorForPoint(-7, 0);
         printColorForPoint(7, 0);
 
-        double x = enterPoint("first");
-        double y = enterPoint("second");
+        double x = readPoint("first");
+        double y = readPoint("second");
         printColorForPoint(x, y);
 
     }
