@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
+
     public static Parabola verticalParabola = new Parabola(5, 0, 0.25);
     public static Parabola horizontalParabola = new Parabola(2, 0, 0.125);
     public static Line verticalLine = new Line(0, 13.5, 5.5);
