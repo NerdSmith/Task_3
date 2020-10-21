@@ -24,7 +24,7 @@ public class Main {
         SimpleColor[] correctResultsArr = {SimpleColor.ORANGE, SimpleColor.GREEN, SimpleColor.GREEN, SimpleColor.GRAY,
                 SimpleColor.GRAY, SimpleColor.GRAY, SimpleColor.WHITE};
 
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < pointsArr[0].length; i++) {
             SimpleColor currentResult = picture.getColor(pointsArr[0][i], pointsArr[1][i]);
             SimpleColor correctResult = correctResultsArr[i];
 
