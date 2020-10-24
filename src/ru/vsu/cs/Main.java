@@ -20,12 +20,16 @@ public class Main {
     }
 
     private static void testPoints(Picture picture) {
-        double[][] pointsArr = {{-2, 3, -8, 5, 5, -7, 7}, {-2, 6, -8, 2, -4, 0, 0}};
+        // double[][] pointsArr = {{-2, 3, -8, 5, 5, -7, 7}, {-2, 6, -8, 2, -4, 0, 0}};
+
+        Point[] pointsArr = {new Point(-2, -2), new Point(3, 6), new Point(-8, -8),
+                new Point(5, 2), new Point(5, -4), new Point(-7, 0), new Point(7,0)};
+
         SimpleColor[] correctResultsArr = {SimpleColor.ORANGE, SimpleColor.GREEN, SimpleColor.GREEN, SimpleColor.GRAY,
                 SimpleColor.GRAY, SimpleColor.GRAY, SimpleColor.WHITE};
 
-        for (int i = 0; i < pointsArr[0].length; i++) {
-            SimpleColor currentResult = picture.getColor(pointsArr[0][i], pointsArr[1][i]);
+        for (int i = 0; i < pointsArr.length; i++) {
+            SimpleColor currentResult = picture.getColor(pointsArr[i].x, pointsArr[i].y);
             SimpleColor correctResult = correctResultsArr[i];
 
             if (currentResult == correctResult) {
